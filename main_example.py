@@ -33,10 +33,10 @@ parser.add_argument('--results-dir', type=str, default='./store/results', dest='
 # Data-stream parameters
 data_params = parser.add_argument_group('Data-stream Parameters')
 data_params.add_argument('--experiment', type=str, default='splitMNIST', choices=['splitMNIST', 'permMNIST'])
-data_params.add_argument('--scenario', type=str, default='class', choices=['task', 'domain', 'class'])
+data_params.add_argument('--scenario', type=str, default='task', choices=['task', 'domain', 'class'])
 data_params.add_argument('--stream', type=str, default='task-based', choices=['task-based', 'random'])
 data_params.add_argument('--tasks', type=int, default=5, help="# of tasks")
-data_params.add_argument('--iters', type=int, default=2000, help="# of batches (if `task-based`, this is per task)")
+data_params.add_argument('--iters', type=int, default=500, help="# of batches (if `task-based`, this is per task)")
 data_params.add_argument('--batch', type=int, default=128, help="batch-size")
 
 # Model architecture parameters
@@ -54,9 +54,9 @@ train_params.add_argument('--decay', type=float, default=0., help="weight decay 
 # -prameters specific to complex synapses
 cs_params = parser.add_argument_group('Complex Synapse Parameters (Benna & Fusi, 2016; Nat Neuro)')
 cs_params.add_argument('--cs', action='store_true', help="use the complex synapse optimizer")
-cs_params.add_argument('--beakers', type=int, default=6, help="# of beakers")
-cs_params.add_argument('--alpha', type=float, default=1., help="fastest timescale of the complex synapse")
-cs_params.add_argument('--beta', type=float, default=1024., help="slowest timescale of the complex synapse")
+cs_params.add_argument('--beakers', type=int, default=5, help="# of beakers")
+cs_params.add_argument('--alpha', type=float, default=500., help="fastest timescale of the complex synapse")
+cs_params.add_argument('--beta', type=float, default=2500., help="slowest timescale of the complex synapse")
 
 # Evaluation parameters
 eval_params = parser.add_argument_group('Evaluation Parameters')
