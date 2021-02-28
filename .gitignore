@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+
+notebooks/.ipynb_checkpoints/
+notebooks/store
+notebooks/files
+
+docker/
+
+store/datasets/
+store/plots/
+store/results/
+store/models/
