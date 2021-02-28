@@ -20,9 +20,9 @@ The current version of the code has been tested with:
 ## The complex synapse optimizer object
 All code for the complex synapse optimizer is contained in `complex_synapses.py`.
 There are two versions: one in combination with the standard SGD optimizer
-(see [here](https://github.com/GMvandeVen/complex-synapses/blob/83cc3f18e8cda92cfed8669870c563aca2a14099/complex_synapses.py#L19))
+(see [here](https://github.com/GMvandeVen/complex-synapses/blob/6574bb1854c005cf815189dd0747ff1a703bdb4a/complex_synapses.py#L19))
 and one in combination with the Adam optimzer
-(see [here](https://github.com/GMvandeVen/complex-synapses/blob/83cc3f18e8cda92cfed8669870c563aca2a14099/complex_synapses.py#L127)).
+(see [here](https://github.com/GMvandeVen/complex-synapses/blob/6574bb1854c005cf815189dd0747ff1a703bdb4a/complex_synapses.py#L127)).
 
 
 #### Parameters
